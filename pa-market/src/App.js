@@ -1,11 +1,7 @@
+import React from 'react';
+import Routes from './Routes';
 import './global.css';
 
-const App = () => {
-  return (
-    <div className="App">
-      <h1>paMarket</h1>
-    </div>
-  );
-};
+const App = () => <Routes />;
 
 export default App;
