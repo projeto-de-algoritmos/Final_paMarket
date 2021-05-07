@@ -21,7 +21,7 @@ const ResultCard = ({ total, value, onChange, onClick }) => {
       <Link
         className={value ? 'result-button-active' : 'result-button-disable'}
         onClick={onClick}
-        to={value ? '/products/result' : null}
+        to="/products/result"
       >
         <h1 className="result-button-title">Calcular melhor compra</h1>
       </Link>

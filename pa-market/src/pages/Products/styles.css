@@ -51,6 +51,11 @@
   flex-wrap: wrap;
 }
 
+.products-list-link {
+  text-decoration: none;
+  margin: 3rem;
+}
+
 .products-resume {
   width: 20%;
 }

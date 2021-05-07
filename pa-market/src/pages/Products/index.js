@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import './styles.css';
 import Modal from 'react-modal';
 import Header from '../../components/Header';
@@ -10,7 +11,7 @@ import { knapsack } from '../../dataStructure/knapsack.js';
 import { formatPrice } from '../../utils/formatPrice.js';
 
 const Products = () => {
-  const [clientValue, setClientValue] = useState(null);
+  const [clientValue, setClientValue] = useState(0);
   const [modalIsOpen, setModalIsOpen] = useState(false);
   const [itemsSorted, setItemsSorted] = useState(products);
 
@@ -73,12 +74,17 @@ const Products = () => {
       <div className="products-content">
         <div className="products-list">
           {itemsSorted.map((product) => (
-            <ProductCard
+            <Link
               key={product.id}
-              image={product.image}
-              name={product.name}
-              price={formatPrice(product.price)}
-            />
+              className="products-list-link"
+              to={`/products/${product.id}`}
+            >
+              <ProductCard
+                image={product.image}
+                name={product.name}
+                price={formatPrice(product.price)}
+              />
+            </Link>
           ))}
         </div>
 
