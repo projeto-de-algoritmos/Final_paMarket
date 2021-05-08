@@ -1,3 +1,7 @@
+// sector => setores do produto (Hortifruti, Padaria, Bebidas, Açougue e Laticinios)
+// salesNumber => número de vendas
+// price => preço do produto
+
 export const products = [
   {
     id: 1,
