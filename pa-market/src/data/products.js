@@ -9,7 +9,7 @@ export const products = [
     price: 10,
     image: '1.png',
     sector: 'Hortifruti',
-    salesNumber: '30',
+    salesNumber: 30,
   },
   {
     id: 2,
@@ -17,7 +17,7 @@ export const products = [
     price: 5,
     image: '2.png',
     sector: 'Hortifruti',
-    salesNumber: '20',
+    salesNumber: 20,
   },
   {
     id: 3,
@@ -25,7 +25,7 @@ export const products = [
     price: 1,
     image: '3.png',
     sector: 'Hortifruti',
-    salesNumber: '50',
+    salesNumber: 50,
   },
   {
     id: 4,
@@ -33,7 +33,7 @@ export const products = [
     price: 4,
     image: '4.png',
     sector: 'Hortifruti',
-    salesNumber: '5',
+    salesNumber: 5,
   },
   {
     id: 5,
@@ -41,7 +41,7 @@ export const products = [
     price: 3,
     image: '5.png',
     sector: 'Hortifruti',
-    salesNumber: '15',
+    salesNumber: 15,
   },
   {
     id: 6,
@@ -49,7 +49,7 @@ export const products = [
     price: 15,
     image: '6.png',
     sector: 'Hortifruti',
-    salesNumber: '32',
+    salesNumber: 32,
   },
   {
     id: 7,
@@ -57,7 +57,7 @@ export const products = [
     price: 3,
     image: '7.png',
     sector: 'Hortifruti',
-    salesNumber: '3',
+    salesNumber: 3,
   },
   {
     id: 8,
@@ -65,7 +65,7 @@ export const products = [
     price: 8,
     image: '8.png',
     sector: 'Padaria',
-    salesNumber: '23',
+    salesNumber: 23,
   },
   {
     id: 9,
@@ -73,7 +73,7 @@ export const products = [
     price: 5,
     image: '9.png',
     sector: 'Padaria',
-    salesNumber: '12',
+    salesNumber: 12,
   },
   {
     id: 10,
@@ -81,7 +81,7 @@ export const products = [
     price: 10,
     image: '10.png',
     sector: 'Padaria',
-    salesNumber: '4',
+    salesNumber: 4,
   },
   {
     id: 11,
@@ -89,7 +89,7 @@ export const products = [
     price: 20,
     image: '11.png',
     sector: 'Padaria',
-    salesNumber: '10',
+    salesNumber: 10,
   },
   {
     id: 12,
@@ -97,7 +97,7 @@ export const products = [
     price: 16,
     image: '12.png',
     sector: 'Padaria',
-    salesNumber: '14',
+    salesNumber: 14,
   },
   {
     id: 13,
@@ -105,7 +105,7 @@ export const products = [
     price: 9,
     image: '13.png',
     sector: 'Padaria',
-    salesNumber: '6',
+    salesNumber: 6,
   },
   {
     id: 14,
@@ -113,7 +113,7 @@ export const products = [
     price: 5,
     image: '14.png',
     sector: 'Padaria',
-    salesNumber: '16',
+    salesNumber: 16,
   },
   {
     id: 15,
@@ -121,7 +121,7 @@ export const products = [
     price: 3,
     image: '15.png',
     sector: 'Padaria',
-    salesNumber: '26',
+    salesNumber: 26,
   },
   {
     id: 16,
@@ -129,7 +129,7 @@ export const products = [
     price: 4,
     image: '16.png',
     sector: 'Padaria',
-    salesNumber: '17',
+    salesNumber: 17,
   },
   {
     id: 17,
@@ -137,7 +137,7 @@ export const products = [
     price: 4,
     image: '17.png',
     sector: 'Padaria',
-    salesNumber: '14',
+    salesNumber: 14,
   },
   {
     id: 18,
@@ -145,7 +145,7 @@ export const products = [
     price: 5,
     image: '18.png',
     sector: 'Padaria',
-    salesNumber: '25',
+    salesNumber: 25,
   },
   {
     id: 19,
@@ -153,7 +153,7 @@ export const products = [
     price: 8,
     image: '19.png',
     sector: 'Padaria',
-    salesNumber: '6',
+    salesNumber: 6,
   },
   {
     id: 20,
@@ -161,7 +161,7 @@ export const products = [
     price: 24,
     image: '20.png',
     sector: 'Padaria',
-    salesNumber: '24',
+    salesNumber: 24,
   },
   {
     id: 21,
@@ -169,7 +169,7 @@ export const products = [
     price: 2,
     image: '21.png',
     sector: 'Padaria',
-    salesNumber: '52',
+    salesNumber: 52,
   },
   {
     id: 22,
@@ -177,7 +177,7 @@ export const products = [
     price: 15,
     image: '22.png',
     sector: 'Laticínios',
-    salesNumber: '20',
+    salesNumber: 20,
   },
   {
     id: 23,
@@ -185,7 +185,7 @@ export const products = [
     price: 6,
     image: '23.png',
     sector: 'Laticínios',
-    salesNumber: '14',
+    salesNumber: 14,
   },
   {
     id: 24,
@@ -193,7 +193,7 @@ export const products = [
     price: 21,
     image: '24.png',
     sector: 'Laticínios',
-    salesNumber: '7',
+    salesNumber: 7,
   },
   {
     id: 25,
@@ -201,7 +201,7 @@ export const products = [
     price: 30,
     image: '25.png',
     sector: 'Laticínios',
-    salesNumber: '2',
+    salesNumber: 2,
   },
   {
     id: 26,
@@ -209,7 +209,7 @@ export const products = [
     price: 13,
     image: '26.png',
     sector: 'Laticínios',
-    salesNumber: '7',
+    salesNumber: 7,
   },
   {
     id: 27,
@@ -217,7 +217,7 @@ export const products = [
     price: 16,
     image: '27.png',
     sector: 'Laticínios',
-    salesNumber: '12',
+    salesNumber: 12,
   },
   {
     id: 28,
@@ -225,7 +225,7 @@ export const products = [
     price: 27,
     image: '28.png',
     sector: 'Laticínios',
-    salesNumber: '1',
+    salesNumber: 1,
   },
   {
     id: 29,
@@ -233,7 +233,7 @@ export const products = [
     price: 6,
     image: '29.png',
     sector: 'Bebidas',
-    salesNumber: '60',
+    salesNumber: 60,
   },
   {
     id: 30,
@@ -241,7 +241,7 @@ export const products = [
     price: 130,
     image: '30.png',
     sector: 'Bebidas',
-    salesNumber: '3',
+    salesNumber: 3,
   },
   {
     id: 31,
@@ -249,7 +249,7 @@ export const products = [
     price: 4,
     image: '31.png',
     sector: 'Bebidas',
-    salesNumber: '19',
+    salesNumber: 19,
   },
   {
     id: 32,
@@ -257,7 +257,7 @@ export const products = [
     price: 4,
     image: '32.png',
     sector: 'Bebidas',
-    salesNumber: '13',
+    salesNumber: 13,
   },
   {
     id: 33,
@@ -265,7 +265,7 @@ export const products = [
     price: 5,
     image: '33.png',
     sector: 'Bebidas',
-    salesNumber: '9',
+    salesNumber: 9,
   },
   {
     id: 34,
@@ -273,7 +273,7 @@ export const products = [
     price: 6,
     image: '34.png',
     sector: 'Bebidas',
-    salesNumber: '35',
+    salesNumber: 35,
   },
   {
     id: 35,
@@ -281,7 +281,7 @@ export const products = [
     price: 156,
     image: '35.png',
     sector: 'Bebidas',
-    salesNumber: '1',
+    salesNumber: 1,
   },
   {
     id: 36,
@@ -289,7 +289,7 @@ export const products = [
     price: 19,
     image: '36.png',
     sector: 'Bebidas',
-    salesNumber: '14',
+    salesNumber: 14,
   },
   {
     id: 37,
@@ -297,7 +297,7 @@ export const products = [
     price: 40,
     image: '37.png',
     sector: 'Bebidas',
-    salesNumber: '5',
+    salesNumber: 5,
   },
   {
     id: 38,
@@ -305,7 +305,7 @@ export const products = [
     price: 50,
     image: '38.png',
     sector: 'Bebidas',
-    salesNumber: '4',
+    salesNumber: 4,
   },
   {
     id: 39,
@@ -313,7 +313,7 @@ export const products = [
     price: 50,
     image: '39.png',
     sector: 'Açougue',
-    salesNumber: '20',
+    salesNumber: 20,
   },
   {
     id: 40,
@@ -321,7 +321,7 @@ export const products = [
     price: 30,
     image: '40.png',
     sector: 'Açougue',
-    salesNumber: '9',
+    salesNumber: 9,
   },
   {
     id: 41,
@@ -329,7 +329,7 @@ export const products = [
     price: 33,
     image: '41.png',
     sector: 'Açougue',
-    salesNumber: '19',
+    salesNumber: 19,
   },
   {
     id: 42,
@@ -337,7 +337,7 @@ export const products = [
     price: 3,
     image: '42.png',
     sector: 'Hortifruti',
-    salesNumber: '9',
+    salesNumber: 9,
   },
   {
     id: 43,
@@ -345,7 +345,7 @@ export const products = [
     price: 6,
     image: '43.png',
     sector: 'Hortifruti',
-    salesNumber: '19',
+    salesNumber: 19,
   },
   {
     id: 44,
@@ -353,7 +353,7 @@ export const products = [
     price: 10,
     image: '44.png',
     sector: 'Hortifruti',
-    salesNumber: '3',
+    salesNumber: 3,
   },
   {
     id: 45,
@@ -361,7 +361,7 @@ export const products = [
     price: 4,
     image: '45.png',
     sector: 'Hortifruti',
-    salesNumber: '29',
+    salesNumber: 29,
   },
   {
     id: 46,
@@ -369,7 +369,7 @@ export const products = [
     price: 6,
     image: '46.png',
     sector: 'Hortifruti',
-    salesNumber: '9',
+    salesNumber: 9,
   },
   {
     id: 47,
@@ -377,7 +377,7 @@ export const products = [
     price: 4,
     image: '47.png',
     sector: 'Hortifruti',
-    salesNumber: '12',
+    salesNumber: 12,
   },
   {
     id: 48,
@@ -385,7 +385,7 @@ export const products = [
     price: 10,
     image: '48.png',
     sector: 'Hortifruti',
-    salesNumber: '29',
+    salesNumber: 29,
   },
   {
     id: 49,
@@ -393,7 +393,7 @@ export const products = [
     price: 8,
     image: '49.png',
     sector: 'Hortifruti',
-    salesNumber: '3',
+    salesNumber: 3,
   },
   {
     id: 50,
@@ -401,7 +401,7 @@ export const products = [
     price: 8,
     image: '50.png',
     sector: 'Hortifruti',
-    salesNumber: '34',
+    salesNumber: 34,
   },
   {
     id: 51,
@@ -409,7 +409,7 @@ export const products = [
     price: 8,
     image: '51.png',
     sector: 'Hortifruti',
-    salesNumber: '6',
+    salesNumber: 6,
   },
   {
     id: 52,
@@ -417,6 +417,6 @@ export const products = [
     price: 5,
     image: '52.png',
     sector: 'Hortifruti',
-    salesNumber: '35',
+    salesNumber: 35,
   },
 ];
