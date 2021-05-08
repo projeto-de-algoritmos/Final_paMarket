@@ -14,6 +14,16 @@ export const mergeSort = (array, typeParam) => {
       }
     }
 
+    else if (typeParam === 'salesNumber') {
+      while (indexLeft < left.length && indexRight < right.length) {
+        if (left[indexLeft].salesNumber < right[indexRight].salesNumber) {
+          result.push(left[indexLeft++]);
+        } else {
+          result.push(right[indexRight++]);
+        }
+      }
+    }
+
     while (indexLeft < left.length) {
       result.push(left[indexLeft++]);
     }
