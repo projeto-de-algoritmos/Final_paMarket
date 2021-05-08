@@ -1,7 +1,7 @@
 import React from 'react';
 import './styles.css';
 
-const ProductCard = ({ image, name, price }) => {
+const ProductCard = ({ image, name, price, salesNumber }) => {
   return (
     <div className="product-container">
       <div className="product-image-container">
@@ -15,6 +15,7 @@ const ProductCard = ({ image, name, price }) => {
       <div className="product-info">
         <h1 className="product-title">{name}</h1>
         <h2 className="product-price">{price}</h2>
+        <h2 className="product-sales">{salesNumber} pessoas já compraram</h2>
       </div>
     </div>
   );
