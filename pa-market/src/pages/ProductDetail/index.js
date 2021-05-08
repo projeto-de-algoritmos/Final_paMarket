@@ -1,12 +1,21 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import './styles.css';
+import { Link } from 'react-router-dom';
 import Header from '../../components/Header';
+import RelatedProduct from '../../components/RelatedProduct';
 import { products } from '../../data/products.js';
 import { formatPrice } from '../../utils/formatPrice.js';
 
 const ProductDetail = (props) => {
+  const [productsSelected, setProducsSelected] = useState([]);
+
   const productId = props.match.params.id;
   const product = products[productId - 1];
+
+  useEffect(() => {
+    const response = products.filter((item) => item.sector === product.sector);
+    setProducsSelected(response);
+  }, [product.sector]);
 
   return (
     <div className="product-detail-container">
@@ -30,24 +39,42 @@ const ProductDetail = (props) => {
       <div className="product-detail-line" />
 
       <h1 className="product-detail-category-title">
-        Produtos da mesma Categoria
+        Produtos da mesma categoria
       </h1>
       <div className="product-detail-category-list">
-        {products.map((item) => (
-          <div className="product-detail-category-box">
-            <img
-              className="product-detail-category-image"
-              src={`/products/${item.image}`}
-              alt="Product"
+        {productsSelected.map((item) => (
+          <Link
+            key={item.id}
+            className="product-detail-link"
+            to={`/products/${item.id}`}
+          >
+            <RelatedProduct
+              image={item.image}
+              name={item.name}
+              price={formatPrice(item.price)}
             />
+          </Link>
+        ))}
+      </div>
 
-            <div>
-              <h1 className="product-detail-category-item-name">{item.name}</h1>
-              <h2 className="product-detail-category-item-price">
-                {formatPrice(item.price)}
-              </h2>
-            </div>
-          </div>
+      <div className="product-detail-line" />
+
+      <h1 className="product-detail-category-title">
+        Quem viu este produto, viu também
+      </h1>
+      <div className="product-detail-related-list">
+        {products.map((item) => (
+          <Link
+            key={item.id}
+            className="product-detail-link"
+            to={`/products/${item.id}`}
+          >
+            <RelatedProduct
+              image={item.image}
+              name={item.name}
+              price={formatPrice(item.price)}
+            />
+          </Link>
         ))}
       </div>
     </div>
