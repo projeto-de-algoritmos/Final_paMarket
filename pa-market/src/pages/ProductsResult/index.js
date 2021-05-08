@@ -52,12 +52,15 @@ const ProductsResult = () => {
 
         <div className="products-list-items">
           {productsList.map((product) => (
-            <ProductCard
-              key={product.id}
-              name={product.name}
-              price={product.price}
-              image={product.image}
-            />
+            <div className="products-list-card">
+              <ProductCard
+                key={product.id}
+                name={product.name}
+                price={product.price}
+                image={product.image}
+                salesNumber={product.salesNumber}
+              />
+            </div>
           ))}
         </div>
       </div>
