@@ -59,6 +59,7 @@ const Products = () => {
           >
             <h3 className="modal-options">Todos os produtos</h3>
           </button>
+
           <button
             className="filter-button"
             onClick={() => {
@@ -68,6 +69,17 @@ const Products = () => {
             }}
           >
             <h3 className="modal-options">Menor preço</h3>
+          </button>
+
+          <button
+            className="filter-button"
+            onClick={() => {
+              const response = mergeSort(products, 'salesNumber');
+              setItemsSorted(response.reverse());
+              closeModal();
+            }}
+          >
+            <h3 className="modal-options">Mais vendidos</h3>
           </button>
         </div>
       </Modal>
@@ -83,6 +95,7 @@ const Products = () => {
                 image={product.image}
                 name={product.name}
                 price={formatPrice(product.price)}
+                salesNumber={product.salesNumber}
               />
             </Link>
           ))}
