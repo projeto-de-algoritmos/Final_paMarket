@@ -1,7 +1,11 @@
-export function populateGraph(graph) {
+import Graph from '../dataStructure.js';
+
+function populateGraph() {
     const generateTime = () => {
         return Math.floor(Math.random() * 30);
     }
+
+    const graph = new Graph();
 
     graph.addNode("1");
     graph.addNode("2");
@@ -125,26 +129,28 @@ export function populateGraph(graph) {
     graph.addEdge("42", "7", generateTime());
     graph.addEdge("42", "8", generateTime());
     graph.addEdge("43", "9", generateTime());
-    graph.addEdge("44", "10", generateTime());
-    graph.addEdge("44", "11", generateTime());
-    graph.addEdge("44", "12", generateTime());
-    graph.addEdge("45", "32", generateTime());
+    graph.addEdge("44", "45", generateTime());
+    graph.addEdge("44", "46", generateTime());
+    graph.addEdge("44", "47", generateTime());
     graph.addEdge("45", "46", generateTime());
-    graph.addEdge("45", "34", generateTime());
-    graph.addEdge("46", "1", generateTime());
-    graph.addEdge("46", "3", generateTime());
-    graph.addEdge("47", "5", generateTime());
-    graph.addEdge("48", "8", generateTime());
-    graph.addEdge("48", "2", generateTime());
+    graph.addEdge("45", "47", generateTime());
+    graph.addEdge("45", "48", generateTime());
+    graph.addEdge("46", "49", generateTime());
+    graph.addEdge("46", "47", generateTime());
+    graph.addEdge("47", "48", generateTime());
+    graph.addEdge("48", "49", generateTime());
+    graph.addEdge("48", "50", generateTime());
     graph.addEdge("48", "16", generateTime());
-    graph.addEdge("49", "22", generateTime());
-    graph.addEdge("49", "23", generateTime());
-    graph.addEdge("49", "41", generateTime());
-    graph.addEdge("50", "22", generateTime());
-    graph.addEdge("51", "23", generateTime());
+    graph.addEdge("49", "50", generateTime());
+    graph.addEdge("49", "51", generateTime());
+    graph.addEdge("49", "52", generateTime());
+    graph.addEdge("50", "51", generateTime());
+    graph.addEdge("51", "52", generateTime());
     graph.addEdge("51", "1", generateTime());
-    graph.addEdge("52", "50", generateTime());
-    graph.addEdge("52", "51", generateTime());
+    graph.addEdge("52", "25", generateTime());
+    graph.addEdge("52", "26", generateTime());
 
-
+    graph.print();
 }
+
+populateGraph();
