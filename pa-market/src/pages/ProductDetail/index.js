@@ -4,18 +4,29 @@ import { Link } from 'react-router-dom';
 import Header from '../../components/Header';
 import RelatedProduct from '../../components/RelatedProduct';
 import { products } from '../../data/products.js';
+import { populateGraph } from '../../data/populateGraph.js';
 import { formatPrice } from '../../utils/formatPrice.js';
 
 const ProductDetail = (props) => {
-  const [productsSelected, setProducsSelected] = useState([]);
+  const [productsSelected, setProductsSelected] = useState([]);
+  const [relatedProducts, setRelatedProducts] = useState([]);
 
   const productId = props.match.params.id;
   const product = products[productId - 1];
 
   useEffect(() => {
-    const response = products.filter((item) => item.sector === product.sector);
-    setProducsSelected(response);
-  }, [product.sector]);
+    const productsSameSector = products.filter(
+      (item) => item.sector === product.sector
+    );
+    setProductsSelected(productsSameSector);
+
+    const graph = populateGraph();
+    const minimalSpanningTree = graph.prim(productId.toString());
+
+    setRelatedProducts(
+      minimalSpanningTree.edges.filter((item) => item.source === `${productId}`)
+    );
+  }, [product.sector, productId]);
 
   return (
     <div className="product-detail-container">
@@ -63,16 +74,16 @@ const ProductDetail = (props) => {
         Quem viu este produto, viu também
       </h1>
       <div className="product-detail-related-list">
-        {products.map((item) => (
+        {relatedProducts.map((item) => (
           <Link
             key={item.id}
             className="product-detail-link"
             to={`/products/${item.id}`}
           >
             <RelatedProduct
-              image={item.image}
-              name={item.name}
-              price={formatPrice(item.price)}
+              image={`${item.target}.png`}
+              name={products[parseInt(item.target) - 1].name}
+              price={formatPrice(products[parseInt(item.target) - 1].price)}
             />
           </Link>
         ))}
