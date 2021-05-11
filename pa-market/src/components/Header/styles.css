@@ -12,8 +12,12 @@
 }
 
 .header-logo {
+  text-decoration: none;
+
   display: flex;
   flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 
 .header-title {
